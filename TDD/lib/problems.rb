@@ -18,4 +18,15 @@ class Array
         final
     end
 
+    def my_transpose
+        transposed = Array.new(self.length) { Array.new(self.length) }
+
+        (0...self.length).each do |i|
+            (0...self.length).each do |j|
+                transposed[i][j] = self[j][i]
+            end
+        end
+        transposed
+    end
+
 end
