@@ -30,3 +30,17 @@ class Array
     end
 
 end
+
+def stock_picker(array)
+    max_sum = 0
+    current_pair = [0,1]
+    array.each_with_index do |ele, ind1|
+        array.each_with_index do |ele2, ind2|
+            if ele2 - ele > max_sum && ind2 > ind1
+                max_sum = ele2 - ele
+                current_pair = [ind1, ind2]
+            end
+        end
+    end
+    current_pair
+end

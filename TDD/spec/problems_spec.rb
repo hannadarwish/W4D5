@@ -30,3 +30,15 @@ describe Array do
     end
 
 end
+   
+describe "stock_picker" do 
+        it "takes an array of stock prices (prices on days and outputs the most profitable pair of days on which to first buy the stock and
+        then sell the stock" do 
+            expect(stock_picker([10, 30, 15, 100, 50])).to eq([0, 3])
+    end
+    end
+
+    describe "towers_of_hanoi" do 
+        it ""
+    end
+
